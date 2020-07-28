@@ -1,0 +1,17 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+group 'com.hongsong.bot'
+version '1.0.0-SNAPSHOT'
+sourceCompatibility = 11
+
+dependencies {
+    compile 'net.dv8tion:JDA:4.2.0_182'
+    compile 'org.projectlombok:lombok'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
